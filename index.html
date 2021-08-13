@@ -241,6 +241,52 @@
         </div>
     </section>
     <!--End Contact Section-->
+    <!--Form section-->
+    <section id="form">
+        <div>
+            <h1 class="section-title">Form</h1>
+        </div>
+        <div class="form-box">
+            <form action="https://httpbin.org/post" method="POST">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" required>
+                    <label for="Address">Address</label>
+                    <input type="text" name="address" required> <br>
+                    <label for="Province">Province</label>
+                    <input type="text" name="Province" list="provincelist" required>
+                    <datalist id="provincelist">
+                        <option label="Alberta" value="Alberta"></option>
+                        <option label="Brithish Columbia" value="Brithish Columbia"></option>
+                        <option label="Manitoba" value="Manitoba"></option>
+                        <option label="New Brunswic" value="New Brunswic"></option>
+                        <option label="New Foundland" value="New Foundland"></option>
+                        <option label="Novascotia" value="Novascotia"></option>
+                        <option label="Ontario" value="Ontario"></option>
+                        <option label="Prince Edward Island" value="Prince Edward Island"></option>
+                        <option label="Quebec" value="Quebec"></option>
+                        <option label="Saskatchewan" value="Saskatchewan"></option>
+                    </datalist>
+                    <label for="postalCode">Postal Code</label>
+                    <input type="text" name="postalCode" required>
+                </div>
+                <div>
+                    <label for="hiring">Hiring</label>
+                    <input type="radio" checked name="radio-group1" value="hiring" />
+                    <label for="employee">Employee</label>
+                    <input type="radio" name="radio-group1" value="employee" />
+                    <label for="comment">Comment</label>
+                    <input type="radio" name="radio-group1" value="comment" />
+                </div>
+                <div>
+                    <button class="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--End Form section-->
     <!--Footer-->
     <section id="footer">
         <div class="footer container">
